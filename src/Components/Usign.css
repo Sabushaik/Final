@@ -1,0 +1,22 @@
+.Styling {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('C:\\Users\\KARISHMA SHAIK\\OneDrive\\Desktop\\Reactjs\\textutil\\src\\images\\Tourist.jpg');
+    background-size: cover; /* Cover the entire screen */
+    filter: blur(8px); /* Apply blur effect */
+    z-index: -1; /* Ensure it's behind other content */
+}
+
+.content {
+    position: relative; /* Ensure content stays above background */
+    z-index: 1; /* Place content above blurred background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* 100% of viewport height */
+    color: white;
+    text-align: center;
+}

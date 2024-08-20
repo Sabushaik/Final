@@ -1,0 +1,39 @@
+.Tc {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+  }
+
+  .rowsand {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+  }
+  .boxMan {
+    height: 200px;
+    width: 200px;
+    margin: 10px;
+    opacity: 0; /* Start with opacity 0 */
+    animation: slide-in 0.8s ease forwards; /* Animation to slide in */
+    border-radius: 10px;
+  }
+  
+  /* Different sizes and colors */
+  .small { background-color: #100f0f; border-radius: 10px; }
+  .medium { background-color: #131212; }
+  .large { background-color: #0b0d0c; }
+  .huge { background-color: #070706; }
+  .giant { background-color: #050405; }
+  
+  /* Animation keyframes */
+  @keyframes slide-in {
+    0% {
+      opacity: 0;
+      transform: translateX(100%);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
